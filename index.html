@@ -46,7 +46,7 @@
 
 
   <script>
-    const PIXEL_ID = '1440872433605548';
+    const PIXEL_ID = '729921263257681';
     !function(f,b,e,v,n,t,s){
       if(f.fbq) return; n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -238,7 +238,7 @@ window.addEventListener('load', async () => {
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ subdomain: 'wbrich3', fbc, fbp })
+      body: JSON.stringify({ subdomain: 'saladorada', fbc, fbp })
     }
   );
   if (!resp.ok) throw new Error(`LineManager error: ${resp.status}`);
@@ -249,12 +249,12 @@ const visitorId = await getVisitorId();
 const { allowTracking } = await verifyVisitor(visitorId);
 
 if (allowTracking) {
-  const SECONDARY_API = 'https://34c92r5ni9.execute-api.us-east-2.amazonaws.com/prod/F1-BETTROYA';
+  const SECONDARY_API = 'https://7ab0c5s4h7.execute-api.us-east-2.amazonaws.com/prod/F1-SALADORADA-new';
   const EventPayload = {
     uuid,
     name,
     timestamp: new Date().toISOString(),
-    subdomain: 'bettroya'
+    subdomain: 'saladorada'
   };
   fetch(SECONDARY_API, {
     method: 'POST',
